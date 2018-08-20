@@ -1,0 +1,71 @@
+// 模态框样式
+.modal_footer {
+  @include modal_footer;
+  margin-top: 20px;
+}
+.detail{
+  width: 100%;
+  padding: 25px 16px;
+  background: #EDF0F5;
+  overflow: hidden;
+}
+.head_port{
+  width: 162px;
+  height: 162px;
+  background: #666;
+  margin-right: 14px;
+  float: left;
+}
+.user_main{
+  float: left;
+  width: 258px;
+}
+.user_main .user_name{
+  font-size: 20px;
+  color: #5c5c5c;
+  margin-bottom: 30px;
+  position: relative;
+}
+.user_main .user_name img{
+  position: absolute;
+  top: 2px;
+  margin-left: 4px;
+}
+.user_main ul li{
+  font-size: 16px;
+  color: #86919f;
+}
+.user_main ul li p:first-child{
+  float: left;
+  width: 40%;
+}
+.user_main ul li p:last-child{
+  float: left;
+}
+.power ul {
+  padding: 18px 16px;
+}
+.power ul li{
+  width: 100%;
+  padding: 2px 0;
+  overflow: hidden;
+}
+.power ul li h5{
+  float: left;
+  font-size: 16px;
+  color: #5c5c5c;
+  width: 100px;
+  text-align: left;
+  line-height: 24px;
+}
+.power ul li p{
+  float: left;
+  font-size: 16px;
+  color: #86919f;
+  line-height: 24px;
+  margin-right: 30px;
+}
+.toggleswitch{
+  margin-top: 4px;
+  margin-left: 10px;
+}

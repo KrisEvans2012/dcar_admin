@@ -1,0 +1,116 @@
+.login_warp{
+  width: 100%;
+  min-height: 920px;
+  height: 100vh;
+  background: url("~@/assets/img/login/back.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.login_content{
+  width: 584px;
+  height: 671px;
+  background: url("~@/assets/img/login/content-back.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  right: 280px;
+  margin-top: -335px;
+}
+.main{
+  width: 312px;
+  height: 671px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.main .logo{
+  display: block;
+  width: 198px;
+  height: 60px;
+  margin: 100px 0 83px 30px;
+}
+.substance{
+  width: 312px;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0 5px;
+  border-bottom: 1px solid #EEEDF2;
+}
+.active{
+  border-bottom: 1px solid #7B76CC !important;
+}
+.substance img:first-child{
+  display: block;
+  width: 20px;
+  height: 24px;
+  margin: 8px;
+  float: left;
+  margin-right: 57px;
+}
+.substance input{
+  border: 0;
+  float: left;
+  line-height: 40px;
+  background: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  color: #424a5c;
+}
+.substance input::-webkit-input-placeholder{
+  color: #b1bbd0;
+}
+.substance input:-moz-placeholder{
+  color: #b1bbd0;
+}
+.substance input::-moz-placeholder{
+  color: #b1bbd0;
+}
+.substance img:last-child{
+  float: right;
+  width: 25px;
+  height: 17px;
+  margin-top: 11px;
+}
+.prompt{
+  width: 282px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 12px auto;
+  background: #EBEEF5;
+  position: relative;
+}
+.prompt img{
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+.prompt p{
+  font-size: 14px;
+  color: #7a7d83;
+  line-height: 30px;
+  padding-left: 52px;
+}
+.submit{
+  display: block;
+  margin: 28px auto;   // 50
+  width: 310px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  background: linear-gradient(left, #FCC14D , #FD9465);
+  font-size: 20px;
+  color: #353535;
+  letter-spacing: 14px;
+  text-indent: 14px;
+  outline: none;
+}
+
+.substance:last-child{
+  position: relative;
+}
+.code{
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}

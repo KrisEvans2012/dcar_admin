@@ -1,0 +1,100 @@
+.order_body{
+  padding:42px;
+}
+.public_header {
+  @include public_header;
+}
+.public_search {
+  @include public_search;
+}
+.table_header {
+  @include table_header;
+}
+.public_table {
+  @include public_table;
+}
+.filter_box {
+  @include public_filter;
+}
+.operation_body{
+  padding:42px;
+}
+.activeItem{
+  @include activeItem;
+}
+.state_one{
+  color:#D94235;
+}
+.state_two{
+  color:#6163C4;
+}
+.confirm_delivery{
+  background: -webkit-linear-gradient(180deg, #6B7EF4, #8468E3); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(180deg, #6B7EF4, #8468E3); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(180deg, #6B7EF4, #8468E3); /* Firefox 3.6 - 15 */
+  background: linear-gradient(145deg, #6B7EF4, #8468E3);
+  color:#fff;
+  border-radius: 20px;
+  border:none;
+  width:100px;
+  text-align: center;
+  padding:3px 0;
+  outline: none;
+  cursor: pointer;
+}
+.cofirm_receipt{
+  background: #FB9644; 
+  color:#fff;
+  border-radius: 20px;
+  border:none;
+  width:100px;
+  text-align: center;
+  padding:3px 0;
+  outline: none;
+  cursor: pointer;
+}
+.finished{
+  background: #B5B5B5; 
+  color:#fff;
+  border-radius: 20px;
+  border:none;
+  width:100px;
+  text-align: center;
+  padding:3px 0;
+  outline: none;
+  cursor: pointer;
+}
+.check_td{
+  position: relative;
+}
+.check_box{
+  position: absolute;
+  top:13px;
+  left:20%;
+}
+.allCheck_box{
+  padding-left:31px;
+}
+// 模态框样式
+.modal_footer {
+  @include modal_footer;
+}
+//end
+.logistics_box{
+  overflow: hidden;
+}
+.logistics_box>div:nth-child(1) {
+  float: left;
+  display: inline-block;
+  width:20%;
+  text-align: center;
+  border-right: 1px solid #EBECEF;
+  height:465px;
+  line-height: 400px;
+}
+.logistics_box>div:nth-child(2) {
+  float: right;
+  display: inline-block;
+  width:80%;
+  padding:10px 20px;
+}

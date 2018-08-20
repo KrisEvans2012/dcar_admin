@@ -1,0 +1,108 @@
+.code_main{
+  padding:42px;
+}
+.public_header {
+  @include public_header;
+}
+.public_search {
+  @include public_search;
+  width:55%;
+}
+.table_header {
+  @include table_header;
+}
+.public_table {
+  @include public_table;
+}
+.filter_box {
+  @include public_filter;
+}
+.activeItem{
+  @include activeItem;
+}
+.add_code_box{
+  position: relative;
+}
+.add_code{
+  position: absolute;
+  cursor: pointer;
+  top:5px;
+  right:10px;
+  color:#fff;
+  background: -webkit-linear-gradient(180deg, #6B7EF4, #8468E3); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(180deg, #6B7EF4, #8468E3); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(180deg, #6B7EF4, #8468E3); /* Firefox 3.6 - 15 */
+  background: linear-gradient(145deg, #6B7EF4, #8468E3);
+  border-radius: 25px;
+  padding:5px 20px;
+  border:none;
+  outline: none;
+  img{
+    height:16px;
+  }
+}
+.alter_icon{
+  height:16px;
+  vertical-align: top;
+  cursor: pointer;
+  margin-left:10px;
+}
+.switch_icon{
+  cursor: pointer;
+}
+.title{
+  line-height: 60px;
+  font-size: $font_md;
+  color: #484848;
+  border-bottom: 1px solid #e8f2f8;
+  font-weight: bold;
+}
+
+.douStyle{
+  padding: 21px 30px;
+}
+.redeem_top{
+  overflow: hidden;
+}
+.chart_box{
+  background: #fff;
+  padding: 0 30px;
+  float: left;
+  margin-right:1%;
+  margin-bottom:5px;
+}
+.filter_main{
+  float: left;
+}
+@media (min-width: 1920px) { 
+  .chart_box{
+    width: 39%;
+  }
+  .filter_main{
+    width: 60%;
+  }
+}
+@media (min-width: 1501px) and (max-width: 1919px) { 
+  .chart_box{
+    width: 39%;
+  }
+  .filter_main{
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1500px) { 
+  .chart_box{
+    width: 99%;
+  }
+  .filter_main{
+    width: 99%;
+  }
+}
+@media (max-width: 767px) { 
+  .chart_box{
+    width: 99%;
+  }
+  .filter_main{
+    width: 99%;
+  }
+}

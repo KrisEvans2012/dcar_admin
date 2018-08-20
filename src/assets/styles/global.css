@@ -1,0 +1,208 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+a,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: "";
+}
+
+abbr,
+acronym {
+	border: 0;
+}
+
+.clear {
+	zoom: 1;
+}
+
+.clear :after {
+	clear: both;
+	content: '.';
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+a:hover{
+	text-decoration: none;
+}
+
+._citys { width: 374px; display: inline-block; border: 2px solid #eee; padding: 5px; position: relative;background: #fff;box-shadow: 3px 3px 3px #e1e1e1; }
+._citys span { color: #ABABAB; font-size: 28px; line-height: 15px; text-align: center; position: absolute; right: 10px; top: 10px; cursor: pointer; }
+._citys0 { width: 100%; height: 34px; display: inline-block; border-bottom: 2px solid #F4A56C; padding: 0; margin: 0; }
+._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer; }
+.citySel { background-color: #F4A56C; color: #fff !important; }
+._citys1 { width: 100%; display: inline-block; padding: 10px 0; }
+._citys1 a { width: 83px; height: 35px; display: inline-block; color: #666; margin-left: 6px; margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 13px; overflow: hidden; }
+._citys1 a:hover { color: #fff; background-color: #F4A56C; }
+.AreaS { background-color: #F4A56C !important; color: #fff !important; }
+
+/*分页*/
+.paginationBox{
+  background-color: #fff;
+  margin:0 !important;
+  font-size: 13px;
+  /*height:40px;*/
+  line-height: 30px;
+  padding:5px 0;
+}
+.pageList{
+  overflow: hidden;
+  float: right;
+  color:#a7a7a7;
+  /*padding:5px 0 !important;*/
+  /*padding-left: 20px !important;*/
+}
+.pageList>li{
+  float: left;
+}
+.pageList>li:nth-child(1){
+  padding-right: 20px !important;
+}
+.pageList>li>input{
+  width:70px;
+  outline:none !important;
+  border:0px;
+  height:22px;
+  color:#6C7DF4;
+  padding:0 8px;
+  text-align: center;
+  background-color: transparent;
+}
+.pageList>li>input:focus { outline: none; }
+.batchBox{
+  color:#6C7DF4;
+  padding-left:20px;
+  cursor: pointer;
+}
+.checkAll{
+  padding-left: 10px;
+}
+.batchBox:hover{
+  color:#8169E4;
+}
+.num{
+  color:#8169E4;
+  padding:0 5px;
+}
+.borderBox{
+  border:1px solid #eaeaea;
+  height:25px;
+  line-height: 22px;
+  margin-top: 3px !important;
+  padding:0 8px !important;
+}
+.clickBox{
+  cursor: pointer;
+}
+.clickBox:hover{
+  background-color: #F5F5F7;
+}
+.singleBorder{
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  height:25px;
+  line-height: 25px;
+  margin-top:3px !important;
+}
+/*分页end*/
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:#AFAFAF;
+  font-size: 15px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:#AFAFAF;
+  font-size: 15px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:#AFAFAF;
+  font-size: 15px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:#AFAFAF;
+  font-size: 15px;
+}
+.vdp-datepicker input{
+  border: 1px solid #E3E7EA;
+  padding:6px 10px;
+  color:#A5A5A5;
+}
+.vdp-datepicker{
+  position: relative;
+}
+.animated-placeholder{
+  position: absolute;
+  top:5px;
+  right:6px;
+}

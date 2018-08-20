@@ -1,0 +1,21 @@
+.public_header {
+  @include public_header;
+}
+.public_search {
+  @include public_search;
+}
+.table_header {
+  @include table_header;
+}
+.public_table {
+  @include public_table;
+}
+.filter_box {
+  @include public_filter;
+}
+.operation_body{
+  padding:42px;
+}
+.activeItem{
+  @include activeItem;
+}

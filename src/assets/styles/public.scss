@@ -1,0 +1,247 @@
+@charset "utf-8";
+$bg_color: #F3F4F8; // 背景颜色
+$font_gray: #788091; // 灰色字体
+$font_blue: #455ecd; // 蓝色字体
+$input_font_front: #b1bbd0; // input框输入前字体颜色
+$input_font_after: #424a5c; // input框输入后字体颜色
+$input_margin_bottom: 30px; // input框下边距
+$input_bg: #F1F4FB; // input背景颜色
+$btn_color: #ffffff;
+$btn_webkit_background: -webkit-linear-gradient(left, #747BCC, #5D6DCC, #475FCB);
+$btn_margin_top: 18px;
+$btn_letter_spacing: 20px;
+$input_padding_left: 10%; // input 左边距
+$font_mm: 12px;
+$font_xs: 13px; //13px
+$font_sm: 14px; //14px
+$font_md: 16px; //16px
+$font_bg: 18px; //18px
+$font_lg: 20px; //20px
+// personal-center-order-list
+$pc_ol_font_color: #6A747C; // 默认字体颜色
+$pc_ol_title_color: #484848;
+$pc_ol_back_color: #96A4D3;
+$pc_ol_pd_left: 20px;
+$pc_ol_border_color: #E0E6EC;
+$pc_box_shadow:1px 2px 3px 3px #F0EBF5; // div 阴影
+
+// 公共头部
+@mixin public_header {
+  height:60px;
+  line-height:60px;
+  background: #fff;
+  color:$pc_ol_title_color;
+  font-size:$font_bg;
+  font-weight: bold;
+  padding-left:40px;
+  letter-spacing:1px;
+  box-shadow: $pc_box_shadow;
+}
+
+// 公共搜索框
+@mixin public_search {
+  margin:20px 40px;
+  position: relative;
+  width:552px;
+  input{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    border:1px solid #e2e6f0;
+    color:#bec2d4;
+    font-size:$font_md;
+    border-radius: 20px;
+    padding:0 50px 0 20px;
+    box-shadow: $pc_box_shadow;
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:#bec2d4;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#bec2d4;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#bec2d4;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#bec2d4;
+  }
+  img{
+    position: absolute;
+    top:9px;
+    right:15px;
+    height:22px;
+    cursor: pointer;
+  }
+}
+
+// 公共表格
+@mixin table_header {
+  background: -webkit-linear-gradient(left, #97A5D2 , #8089CE); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #97A5D2 , #8089CE); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #97A5D2 , #8089CE); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #97A5D2 , #8089CE); /* 标准的语法 */
+  color:#fff;
+  font-size:$font_md;
+  height:46px;
+  line-height: 46px;
+  padding-left:40px;
+  letter-spacing: 2px;
+}
+
+@mixin public_table {
+  background: #fff;
+  box-shadow: $pc_box_shadow;
+  thead{
+    font-size:$font_md;
+    color:$pc_ol_font_color
+  }
+  tbody{
+    font-size:$font_sm;
+    color:$pc_ol_font_color
+  }
+  tbody>tr>td{
+    vertical-align: middle;
+  }
+  tbody>tr:nth-child(even) {
+    background: #F6FBFE;
+  }
+  tbody>tr:hover{
+    background: -webkit-linear-gradient(left, #FBFBFD , #E8E7F5); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,  #FBFBFD , #E8E7F5); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,  #FBFBFD , #E8E7F5); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,  #FBFBFD , #E8E7F5); /* 标准的语法 */
+    border-right: 6px solid #7177EE;
+    box-shadow: $pc_box_shadow;
+  }
+}
+
+// 筛选部分
+@mixin public_filter{
+  box-shadow: $pc_box_shadow;
+  font-size:$font_md;
+  background: #fff;
+  color:#949494;
+  margin-bottom:20px;
+  padding:15px 20px 0 40px;
+  .special_item{
+    line-height: 36px;
+  }
+  .refresh_box{
+    text-align: right;
+    img{
+      height:25px;
+      cursor: pointer;
+    }
+  }
+  .choose_time{
+    zoom: 1;
+    li{
+      float: left;
+      padding:3px 15px;
+    }
+  }
+  .choose_time::after{
+    clear: both;
+    content: " ";
+    display: inline-block;
+  }
+  .choose_item{
+    overflow: hidden;
+    li{
+      float: left;
+      margin:0 15px;
+      padding:20px 0;
+      cursor: pointer;
+      span{
+        border:1px solid #F1F2F5;
+        padding:4px 15px;
+      }
+    }
+  }
+}
+
+// 选中 选项
+@mixin activeItem {
+  color:#fff;
+  background: #8691CF;
+}
+
+// 模态框样式
+@mixin modal_footer {
+  text-align: center;
+  .modal_sure {
+      color: #fff;
+      width: 140px;
+      border-radius: 3px;
+      font-size: $font_sm;
+      letter-spacing: 2px;
+      margin-right: 10px;
+      background: -webkit-linear-gradient(180deg, #6B7EF4, #8468E3); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(180deg, #6B7EF4, #8468E3); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(180deg, #6B7EF4, #8468E3); /* Firefox 3.6 - 15 */
+      background: linear-gradient(145deg, #6B7EF4, #8468E3);
+  }
+  .modal_cancel {
+      color: #fff;
+      width: 140px;
+      border-radius: 3px;
+      font-size: $font_sm;
+      letter-spacing: 2px;
+      margin-left: 10px;
+      background: -webkit-linear-gradient(left, #A8ABB0, #A8ABB0);
+      /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(right, #A8ABB0, #A8ABB0);
+      /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(right, #A8ABB0, #A8ABB0);
+      /* Firefox 3.6 - 15 */
+      background: linear-gradient(to right, #A8ABB0, #A8ABB0);
+      /* 标准的语法 */
+  }
+}
+
+//textare 文本框
+@mixin textarea_box {
+  resize: none;
+  border: 1px solid #E8E9E9;
+  border-radius: 3px;
+  font-size: $font_sm;
+  padding: 5px 10px;
+  line-height: 25px;
+}
+
+// 我的订单搜索框
+@mixin search_box {
+  border: 1px solid $pc_ol_border_color;
+  font-size: 12px;
+  color: #b6b6b6;
+  padding-left: $pc_ol_pd_left;
+  outline: none;
+}
+
+// 带紫色左边框的标题
+@mixin border_title {
+  position: relative;
+  padding-left:20px;
+  font-weight: bold;
+  font-size: 15px;
+  b{
+    display: inline-block;
+    background: #776AE5;
+    width:5px;
+    height:15px;
+    position: absolute;
+    top:5px;
+    left:5px;
+  }
+}
+
+// 下拉框样式
+@mixin own_select{
+  appearance: none;
+ -webkit-appearance: none;   /*去除chrome浏览器的默认下拉图片*/
+ -moz-appearance: none;  /*去除Firefox浏览器的默认下拉图片*/
+ background:url('~@/assets/img/order-management/select.png') no-repeat right center;
+ background-size: 20px;
+ background-position-x: 96%;
+}
